@@ -538,17 +538,13 @@ body{
 }
 
 /* 탑버튼 */
-.top{
+div.top{
     position: fixed;
     bottom: 50px;
     right: 70px;
     cursor: pointer;
     z-index: 99999;
 }
-.top img{
-    width: 80%;
-}
-
 /* 푸터 */
 footer{
     border: 1px solid #213B38;

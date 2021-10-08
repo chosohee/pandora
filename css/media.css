@@ -329,12 +329,14 @@
         height: 18vw;
         margin: 0 0.5%;
     }
-    .top{
-        position: fixed;
-        bottom: 30px;
-        right: 40px;
+    div.top{
+        bottom: 20px;
+        right: 30px;
     }
-    #m_footer{
+    div.top>img{
+        width: 62px;
+    }
+        #m_footer{
         display: none;
     }
     #pc_footer{
@@ -395,10 +397,6 @@
     #pc_header{
         display: block;
     }
-    .top img{
-        width: 100%;
-    }
-    
 }
 @media screen and (min-width:1400px){
     .info_menu{
