@@ -1,0 +1,151 @@
+a{
+    color: inherit;
+    text-decoration: none;
+}
+section.mn_v{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+div.mn_bg{
+    background-image: url(../images/sub2_mn.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 24vw;
+}
+div.mn_txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 30px;
+    
+}
+div.mn_txt h2{
+    font-size: 2.7vw;
+    font-weight: 600;
+    margin-top: 8%;
+    margin-left: 32%;
+}
+div.mn_txt p{
+    font-size: 0.9vw;
+    text-align: left;
+    margin-top: 6%;
+    margin-left: 32%;
+}
+div.cnt{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 80%;
+    margin: 0 auto;
+}
+section.submenu{
+    width: calc(100% / 12 * 3);
+}
+div.sub_menu{
+    display: inline-block;
+    /* border: 1px solid red; */
+    position: sticky;
+    top: 0;
+    width: calc(100% / 12 * 10);
+    padding-left: 50px;
+}
+div.sub_menu h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.menu_list li{
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+.menu_list li:hover{
+    text-decoration: underline;
+}
+section.product{
+    width: calc(100% / 12 * 9);
+    text-align: center;
+    /* border: 1px solid green; */
+}
+div.cnt01{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;}
+div.cnt01 .cnt_menu li{
+    display: inline-block;
+    margin-right: 5px;
+    line-height: 40px;
+}
+div.cnt01 select{
+    width: calc(100% / 12 * 1.5);
+    height: 30px;
+    margin-top: 5px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;;
+}
+.pro_list li{
+    display: inline-block;
+    width: 32.8%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+div.list_img{
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #faece6;
+    margin-bottom: 20px;
+}
+
+div.listimg{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+div.listimg>img{
+    width: 100%;
+}
+div.icon_box{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+div.list_img:hover div.icon_box{
+    opacity: 1;
+}
+div.icon_box>img{
+    background-color: white;
+    border-radius: 100%;
+    width: 10%;
+    padding: 5px;
+    margin: 0 12px;
+    margin-top: 80%;
+    cursor: pointer;
+}
+.page_num li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.num:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    
+}
