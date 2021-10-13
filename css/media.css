@@ -329,14 +329,7 @@
         height: 18vw;
         margin: 0 0.5%;
     }
-    div.top{
-        bottom: 20px;
-        right: 30px;
-    }
-    div.top>img{
-        width: 62px;
-    }
-        #m_footer{
+    #m_footer{
         display: none;
     }
     #pc_footer{
@@ -388,6 +381,10 @@
     }
     .store p{
         font-size: 0.8em;
+    }
+    div.top_btn{
+        width: 70px;
+        height: 70px;
     }
 }
 @media screen and (min-width:1124px){

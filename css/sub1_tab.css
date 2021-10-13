@@ -2,19 +2,16 @@ ul.cnt_menu{
     width: 90%;
 }
 div.cnt01_img{
-    /* border: 1px solid blue; */
     width: 90%;
     height: 60vw;
 }
 div.cnt01_img  div.cnt01_thumbnail{
-    /* border: 1px solid red; */
     width: calc(100% / 8 * 2);
     height: 100%;
 }
 div.thumbnail_box{
     width: 97%;
     height:19vw;
-    /* border: 1px solid yellow; */
 }
 div.cnt01_box{
     width: 90%;
@@ -25,7 +22,6 @@ div.imggallery{
     height: 100% - 6px;
 }
 div.imggallery>img{
-    /* border: 1px solid red; */
     width: 100%;
     height: 100%;
     margin-top: 0;
@@ -198,18 +194,10 @@ div.recom_img:hover p{
 .re_odd{
     margin-top: 30px;
 }
-div.btns{
-    width: 114%;
-    margin-left: -7%;
-    margin-top: -170px;
-    font-size: 35px;
-}
-div.top{
-    bottom: 20px;
-    right: 30px;
-}
-div.top>img{
-    width: 62px;
+/* 탑버튼 */
+div.top_btn{
+    width: 50px;
+    height: 50px;
 }
 @media screen and (max-width:600px){
     div.cnt01_txt h5{

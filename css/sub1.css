@@ -65,7 +65,6 @@ div.imggallery{
 div.imggallery>img{
     width: 70%;
     height: 36vw;
-    /* border: 1px solid red; */
     margin-top: -20px;
 }
 div.cnt01_txt{
@@ -353,7 +352,6 @@ section.recommend h2{
     color: #213b38;  
 }
 div.recommend_view{
-    /* border: 1px solid blue; */
     width: 100%;
     overflow: hidden;
 }
@@ -362,7 +360,6 @@ div.recommend_img{
     width: 150%;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid red; */
 }
 div.recom_img{
     width: calc(100% / 6 - 20px);
@@ -398,22 +395,14 @@ div.recom_img:hover p{
 .re_odd{
     margin-top: 80px;
 }
-div.btns{
-    width: 110%;
-    margin: 0 auto;
-    margin-top: -240px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 40px;
-    color: #e5e5e5;
-    line-height: 80px;
-    margin-left: -5%;
-    cursor: pointer;
-}
-div.top{
+/* 탑버튼 */
+div.top_btn{
     position: fixed;
-    bottom: 50px;
-    right: 70px;
+    bottom: 30px;
+    right: 30px;
     cursor: pointer;
     z-index: 99999;
+}
+.top{
+    width: 100%;
 }
