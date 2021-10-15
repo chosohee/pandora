@@ -43,8 +43,16 @@ div.princess_charm01{
     display: flex;
     margin: 0 auto;
     width: 80%;
+    max-width: 1080px;
     justify-content: space-between;
     margin-top: 150px;
+}
+div.princess_charm01 p{
+    text-align: right;
+    margin-right: 30px;
+    padding-top: 20px;
+    width: 100%;
+    font-size: 16px;
 }
 div.princess_charm01>img{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -53,31 +61,79 @@ div.princess_charm01>img{
 div.princess_charm02{
     display: flex;
     margin: 0 auto;
-    margin-top: -120px;
+    margin-top: -220px;
     width: 80%;
+    max-width: 1080px;
+
     justify-content: space-between;
 }
 div.princess_charm02 p{
-    border: 1px solid green;
-    margin: auto 0 0 auto
+    margin: auto 0 20px 30px;
+    width: 100%;
+    font-size: 16px;
+
 }
 div.princess_charm02>img{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     width: calc(100% / 12 * 5.8);
 }
+section.cnt02{
+    margin-top: 150px;
+}
 div.video{
     margin: 0 auto;
     width: 80%;
+    max-width: 1080px;
+    text-align: center;
+}
+div.video iframe{
+    width: 100%;
+    height: 610px;
+}
+div.cnt03_img{
+    width: 80%;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
     margin-top: 150px;
+}
+div.cnt03_img>img{
+    width: calc(100% / 12 * 7.8);
+}
+div.images{
+    width: calc(100% / 12 * 4);
+    position: relative;
+}
+div.images>img{
+    width:100%;
+    height: 48%;
+    border: 3px solid #faece6;
+}
+div.images>img:nth-child(1){
+    position: absolute;
+    top: 0;
+}
+div.images>img:nth-child(2){
+    position: absolute;
+    bottom: 0;
+}
+section.cnt03 p{
+    text-align: right;
+    width: 80%;
+    max-width: 1080px;
+    margin: 30px auto;
+    font-size: 16px;
+    line-height: 26px;
 }
 section.charm_menu{
-    border: 1px solid yellow;
     margin-top: 150px;
     padding: 120px 0;
+    background: linear-gradient(to bottom, #f8f6f0, #f1e6ea);
 }
 .list{
-    border: 1px solid blue;
     width: 80%;
+    max-width: 1080px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -85,40 +141,36 @@ section.charm_menu{
 .list li{
     text-align: center;
 }
+.list li>div{
+    overflow: hidden;
+    border: 3px solid #faece6;
+    width: 90%;
+    height: 80%;
+}
 .list li img{
-    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.list li img:hover{
+    transform: scale(1.2);
+}
+.list li p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
     width: 90%;
 }
 div.viewbtn p{
-    border: 1px solid black;
-    width: 80%;
+    width: 30%;
     text-align: center;
     margin: 100px auto;
-    padding: 10px 0;
+    padding: 15px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 탑버튼 */
 div.top_btn{
     position: fixed;
@@ -129,4 +181,46 @@ div.top_btn{
 }
 .top{
     width: 100%;
+}
+@media screen and (max-width:1220px) {
+    div.bgtxt{
+        bottom: 55%;
+    }
+    div.bgtxt p{
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    div.bgtxt h2{
+        font-size: 30px;
+    }
+    div.bgimg>img{
+        width: 65%;
+    }
+    div.princess_charm01{
+        margin-top: 100px;
+    }
+    div.princess_charm01 p{
+        font-size: 14px;
+    }
+    div.princess_charm02 p{
+        font-size: 14px;
+    }
+    section.cnt02{
+        margin-top: 100px;
+    }
+    div.video iframe{
+        height: 550px;
+    }
+    section.cnt03 p{
+        font-size: 14px;
+    }
+    div.cnt03_img{
+        margin-top: 100px;
+    }
+    section.charm_menu{
+        margin-top: 100px;
+    }
+    div.viewbtn p{
+        margin: 80px auto;
+    }
 }
