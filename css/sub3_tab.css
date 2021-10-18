@@ -1,14 +1,196 @@
-
-
-
-
-
-
-
-
-
+div.bgtxt{
+    bottom: 50%;
+}
+div.bgtxt p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+div.bgtxt h2{
+    font-size: 28px
+}
+div.bgimg{
+    bottom: 6%;
+}
+div.bgimg>img{
+    width: 58%;
+}
+section.cnt01{
+    margin: 0 auto;
+    width: calc(100% / 8 * 7.5);
+}
+div.princess_charm01{
+    width: 90%;
+}
+div.princess_charm01 p{
+    margin-right: 20px;
+    font-size: 14px;
+}
+div.princess_charm02{
+    width: 90%;
+    margin-top: -130px;
+}
+div.princess_charm02 p{
+    margin-left: 20px;
+    font-size: 14px;
+}
+section.cnt02{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: calc(100% / 8 * 7.5);
+}
+div.video{
+    width: 90%;
+}
+div.video iframe{
+    height: 490px;
+}
+section.cnt03{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: calc(100% / 8 * 7.5);
+}
+div.cnt03_img{
+    width: 90%;
+}
+section.cnt03 p{
+    width: 90%;
+    font-size: 14px;
+    line-height: 26px;
+}
+section.charm_menu{
+    padding: 60px 0;
+}
+.list{
+    width:90%;
+}
+.list li>div{
+    height: 80%;
+}
+.list li p{
+    font-size: 15px;
+    margin-top: 25px;
+}
 /* 탑버튼 */
 div.top_btn{
     width: 50px;
     height: 50px;
+}
+@media screen and (max-width:800px) {
+    div.bgtxt{
+        bottom: 42%;
+    }
+    div.bgtxt p{
+        margin-bottom: 10px;
+    }
+    div.bg_img{
+        height: 50vw;
+    }
+    div.bgimg>img{
+        width: 50%;
+    }
+    section.cnt01{
+        margin-top: 60px;
+    }
+    div.princess_charm01{
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    div.princess_charm01>img{
+        width: 80%;
+        margin-left: 18%; 
+    }
+    div.princess_charm01>p{
+        width: 96%;
+        font-size: 15px;
+        line-height: 26px;
+        margin: 0 auto;
+        margin-bottom: 14px;
+    }
+    div.princess_charm02{
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    div.princess_charm02>img{
+        width: 80%;
+        margin-left: 2%; 
+    }
+    div.princess_charm02>p{
+        font-size: 15px;
+        line-height: 26px;
+        margin-top: 14px;
+    }
+    div.princess_charm02{
+        margin-top: 50px;
+    }
+    section.cnt02{
+        width: 90%;
+        margin-top: 60px;
+    }
+    div.video{
+        width: 100%;
+    }
+    div.video iframe{
+        height: 390px;
+    }
+    section.cnt03{
+        width: 90%;
+        margin-top: 60px;
+    }
+    section.cnt03 p{
+        width: 100%;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    div.cnt03_img{
+        width: 100%;
+    }
+    .list li>div{
+        height: 74%;
+    }
+    .list li p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    div.viewbtn p{
+        padding: 12px 0;
+        margin: 70px auto;
+    }
+}
+@media screen and (max-width:600px){
+    div.bgtxt{
+        right: 6%;
+        bottom: 40%;
+    }
+    div.bgtxt p{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    div.bgtxt h2{
+        font-size: 22px;
+    }
+    div.bgimg{
+        right: 5%;
+    }
+    div.bgimg>img{
+        width: 45%;
+    }
+    div.princess_charm02{
+        margin-top: 20px;
+    }
+    div.video iframe{
+        height: 300px;
+    }
+    section.cnt03 p{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .list li p{
+        font-size: 12px;
+    }
+    div.viewbtn p{
+        padding: 10px 0;
+        margin: 50px auto;
+    }
 }
