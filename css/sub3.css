@@ -153,13 +153,15 @@ section.charm_menu{
     height: 100%;
     background-color: white;
     transition: all 0.3s ease-in-out;
+    cursor: no-drop;
 }
 .list li img:hover{
     transform: scale(1.2);
 }
-.list li p{
+section.charm_menu div.list_box .list li p{
     margin-top: 30px;
     font-size: 17px;
+    color: black;
     font-weight: 500;
     width: 90%;
 }
@@ -171,6 +173,8 @@ div.viewbtn p{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 600;
     font-size: 18px;
+    color: black;
+    cursor: no-drop;
 }
 /* 탑버튼 */
 div.top_btn{

@@ -1,0 +1,104 @@
+div.bg_img{
+    height: 65vw;
+    background-position: 20%;
+}
+div.bgtxt p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+div.bgtxt h2{
+    font-size: 19px;
+}
+div.bgimg>img{
+    width: 50%;
+}
+section.cnt01{
+    margin-top: 30px;
+    width: calc(100% / 4 * 3.5);
+}
+div.princess_charm01>p{
+    font-size: 12.5px;
+    line-height: 21px;
+}
+div.princess_charm01>img{
+    width: 100%;
+    margin-left: 0;
+}
+div.princess_charm02>img{
+    width: 100%;
+    margin: 0;
+}
+div.princess_charm02>p{
+    font-size: 12.5px;
+    line-height: 21px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+section.cnt02{
+    margin-top: 40px;
+    width: calc(100% / 4 * 3.5);
+}
+div.video iframe{
+    height: 210px;
+}
+section.cnt03{
+    margin-top: 50px;
+}
+div.cnt03_img{
+    margin-top: 30px;
+}
+section.cnt03{
+    padding: 0;
+}
+div.cnt03_img{
+    display: inline-block;
+    margin-top: 0;
+}
+div.cnt03_img>img{
+    width: 100%;
+}
+div.images{
+    position: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+div.images>img{
+    width: calc(100% / 4 * 1.87);
+}
+div.images>img:nth-child(1) {
+    position: inherit;
+}  
+div.images>img:nth-child(2) {
+    position: inherit;
+}  
+section.cnt03 p{
+    font-size: 12.5px;
+    line-height: 22px;
+    margin: 10px auto;
+}
+section.charm_menu{
+    margin-top: 50px;
+}
+div.list_box{
+    /* border: 1px solid black; */
+    width: calc(100% / 4 * 3.5);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.list{
+    width: 200%;
+}
+.list li{
+    width: 50%;
+}
+.list li>div{
+    width: calc(100% / 4 * 3.8);
+    height:75%;
+}
+section.charm_menu div.list_box .list li p{
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 500;
+}

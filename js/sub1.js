@@ -1,37 +1,93 @@
 $(function(){
-    // $('.cnt01_thumbnail>img').click(function(){
-    //     var src= $(this).attr('src');
-    //     alert(src); -> 확인
-    // })
+
+    var wd = $(window).width();
+    if(wd >=421){
+
+        // 썸네일 이미지
+        var galleryImg = $('.imggallery>img');
+
+        $('.thumbnail_box>.box').click(function(){
+            var th = $(this).prev();
+            var src= th.attr('src');
+            var alt= th.attr('alt');
+    
+    
+            galleryImg.attr('src',src);
+            galleryImg.attr('alt',alt);
+    
+        });   
+        
+
+
+        // 하단 버튼 슬라이드
+        var reImg = $('.recommend_cnt .recommend_img');
+
+        reImg.find('.recom_img:last').prependTo(reImg);
+        reImg.css('margin-left','-25%');
+    
+        $('.recommend_cnt .left').click(function(){
+            reImg.stop().animate({
+                marginLeft:0
+            },500,function(){
+            reImg.find('.recom_img:last').prependTo(reImg);
+            reImg.css('margin-left','-25%');
+            });
+        });
+    
+        $('.recommend_cnt .right').click(function(){
+            reImg.stop().animate({
+                marginLeft: -50 + '%'
+            },500,function(){
+            reImg.find('.recom_img:first').appendTo(reImg);
+            reImg.css('margin-left','-25%');
+            });
+        });
     
 
-    // $("div.imggallery>img").css("display","none");
-    // $("img.thumbnail").click(function(){
-    //     $("div.imggallery>img").hide();    
-    //     $(this).show(function(){
-    //         let index_num=$("img.thumbnail").index(this);    
-    //         $("div.imggallery>img:eq("+index_num+")").show();
-    //     });
-    // });
+    }else{
+        // 상단 슬라이이드
+        var pg = $('.paging>li');
+
+        pg.click(function(){
+            pg.removeClass('sel');
+            $(this).addClass('sel');
+
+            var ind = $(this).index();
+
+            $('div.cnt01_img').animate({
+                marginLeft : ind*-100 + '%'},500);
+
+        })
 
 
-    var galleryImg = $('.imggallery>img');
+        // 하단 버튼 슬라이드
+        var reImg = $('.recommend_cnt .recommend_img');
 
-    $('.thumbnail_box>.box').click(function(){
-        var th = $(this).prev();
-        var src= th.attr('src');
-        var alt= th.attr('alt');
+        reImg.find('.recom_img:last').prependTo(reImg);
+        reImg.css('margin-left','0%');
+
+        $('.recommend_cnt .left').click(function(){
+            reImg.stop().animate({
+                marginLeft:0
+            },500,function(){
+            reImg.find('.recom_img:last').prependTo(reImg);
+            reImg.css('margin-left','0%');
+            });
+        });
+
+        $('.recommend_cnt .right').click(function(){
+            reImg.stop().animate({
+                marginLeft: -50 + '%'
+            },500,function(){
+            reImg.find('.recom_img:first').appendTo(reImg);
+            reImg.css('margin-left','0%');
+            });
+        });
 
 
-        galleryImg.attr('src',src);
-        galleryImg.attr('alt',alt);
+    }
 
-    });
-
-
-
-
-
+    // 아코디언 드롭
     $('.info_txt').hide();
     $('.cnt01 h5').click(function(){
         $('.info_txt').slideToggle();
@@ -48,34 +104,11 @@ $(function(){
     });
 
 
+    
 
 
 
-    var reImg = $('.recommend_cnt .recommend_img');
-
-    reImg.find('.recom_img:last').prependTo(reImg);
-    reImg.css('margin-left','-25%');
-
-    $('.recommend_cnt .left').click(function(){
-        reImg.stop().animate({
-            marginLeft:0
-        },500,function(){
-        reImg.find('.recom_img:last').prependTo(reImg);
-        reImg.css('margin-left','-25%');
-        });
-    });
-
-    $('.recommend_cnt .right').click(function(){
-        reImg.stop().animate({
-            marginLeft: -50 + '%'
-        },500,function(){
-        reImg.find('.recom_img:first').appendTo(reImg);
-        reImg.css('margin-left','-25%');
-        });
-    });
-
-
-
+    // 탑버튼
     $("div.top_btn>img").click(function(){
         $("html, body").animate({
             scrollTop:0

@@ -17,6 +17,7 @@ ul.cnt_menu li{
     display: inline-block;
     font-size: 15px;
     margin-right: 6px;
+    cursor: no-drop;
 }
 div.cnt01_img{
     text-align: center;
@@ -35,11 +36,11 @@ div.cnt01_img div.cnt01_thumbnail{
 }
 div.thumbnail_box{
     width: 90%;
-    border: 3px solid #faece6;
     display: block;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    border: 3px solid #faece6;
 }
 div.cnt01_img div.cnt01_thumbnail img.thumbnail{
     width: 100%;
@@ -368,6 +369,7 @@ div.recom_img{
     position: relative;
     overflow: hidden;
     border: 3px solid #faece6;
+    transition: all 0.4s ease-in-out;
 }
 div.recom_img>img{
     width: 98%;
@@ -387,13 +389,21 @@ div.recom_img>p{
     background-color: #213b38ce;
     color: white;
     padding-top: 18%;
-    transition: all 0.4s ease-in-out;
 }
 div.recom_img:hover p{
     transform: translateY(-270px);
 }
 .re_odd{
     margin-top: 80px;
+}
+div.btns{
+    /* border: 1px solid red; */
+    width: 108%;
+    margin-top: -15%;
+    margin-left: -4%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
 }
 /* 탑버튼 */
 div.top_btn{
@@ -405,4 +415,16 @@ div.top_btn{
 }
 .top{
     width: 100%;
+}
+@media screen and (max-width:1500px) {
+    div.btns{
+        margin-top: -18%;
+    }
+    
+}
+@media screen and (max-width:1150px) {
+    div.btns{
+        margin-top: -20%;
+    }
+    
 }

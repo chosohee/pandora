@@ -66,7 +66,7 @@ section.charm_menu{
 .list li>div{
     height: 80%;
 }
-.list li p{
+section.charm_menu div.list_box .list li p{
     font-size: 15px;
     margin-top: 25px;
 }
@@ -76,6 +76,9 @@ div.top_btn{
     height: 50px;
 }
 @media screen and (max-width:800px) {
+    div.bg_img{
+        background-position: 10%;
+    }
     div.bgtxt{
         bottom: 42%;
     }
@@ -149,7 +152,7 @@ div.top_btn{
     .list li>div{
         height: 74%;
     }
-    .list li p{
+    section.charm_menu div.list_box .list li p{
         font-size: 14px;
         margin-top: 20px;
     }
@@ -186,11 +189,12 @@ div.top_btn{
         font-size: 14px;
         line-height: 27px;
     }
-    .list li p{
+    section.charm_menu div.list_box .list li p{
         font-size: 12px;
     }
     div.viewbtn p{
         padding: 10px 0;
         margin: 50px auto;
+        width: 50%;
     }
 }
