@@ -36,6 +36,8 @@ div.cnt01 select{
 }
 .page_num li{
     font-size: 1.4vw;
+    margin: 0 10px;
+    margin-bottom: 50px;
 }
 /* 탑버튼 */
 div.top_btn{

@@ -45,19 +45,21 @@ $(function(){
     
 
     }else{
+        
         // 상단 슬라이이드
         var pg = $('.paging>li');
-
+        
         pg.click(function(){
             pg.removeClass('sel');
             $(this).addClass('sel');
-
+            
             var ind = $(this).index();
-
+            
             $('div.cnt01_img').animate({
                 marginLeft : ind*-100 + '%'},500);
+                
+        });
 
-        })
 
 
         // 하단 버튼 슬라이드
@@ -87,6 +89,8 @@ $(function(){
 
     }
 
+
+    
     // 아코디언 드롭
     $('.info_txt').hide();
     $('.cnt01 h5').click(function(){
@@ -105,9 +109,6 @@ $(function(){
 
 
     
-
-
-
     // 탑버튼
     $("div.top_btn>img").click(function(){
         $("html, body").animate({

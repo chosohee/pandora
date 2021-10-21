@@ -65,6 +65,9 @@ div.sub_menu h2{
     margin-bottom: 4%;
     padding-left: 5px;
 }
+.menu_list li>a{
+    cursor: no-drop;
+}
 .menu_list li>a:hover{
     text-decoration: underline;
 }
@@ -112,6 +115,7 @@ div.list_img{
     overflow: hidden;
     border: 3px solid #faece6;
     margin-bottom: 20px;
+    cursor: no-drop;
 }
 div.listimg{
     width: 100%;
@@ -132,6 +136,9 @@ div.icon_box{
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
+div.list_img>div.icon_box>img{
+    cursor: no-drop;
+}
 div.list_img:hover div.icon_box{
     opacity: 1;
 }
@@ -148,9 +155,13 @@ div.icon_box>img{
     cursor: pointer;
 }
 .page_num li{
-    font-size: 1vw;
+    font-size: 1.2vw;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 13px;
+    margin-bottom: 50px;
+}
+.page_num li a{
+    cursor: no-drop;
 }
 .num:hover{
     text-decoration: underline;

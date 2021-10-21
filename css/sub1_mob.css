@@ -10,6 +10,21 @@ ul.cnt_menu li{
 div.imggallery{
     display: none;
 }
+div.thumbnail_btns{
+    display: block;
+}
+div.thumbnailBtns{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
+    margin-top: -200px;
+    margin-bottom: 180px;
+    font-size: 23px;
+    color: #3d3d3d;
+    position: relative;
+    z-index: 2;
+}
 div.cnt01_img{
     overflow: visible;
     width: 300%;
@@ -36,7 +51,7 @@ div.thumbnail_box{
     margin-top: -60px;
     margin-bottom: 50px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 .paging>li{
     border-radius: 100%;

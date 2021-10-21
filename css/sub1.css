@@ -68,6 +68,9 @@ div.imggallery>img{
     height: 36vw;
     margin-top: -20px;
 }
+div.thumbnail_btns{
+    display: none;
+}
 div.cnt01_txt{
     text-align: center;
 }
@@ -114,7 +117,7 @@ div.cnt01_btn{
     text-align: center;
 }
 div.cnt01_btn>.btn1{
-    cursor: pointer;
+    cursor: no-drop;
     font-size: 18px;
     font-family: 'Marcellus';
     font-weight: 600;
@@ -126,7 +129,7 @@ div.cnt01_btn>.btn1{
     margin: 0 7px;
 }
 div.cnt01_btn>.btn2{
-    cursor: pointer;
+    cursor: no-drop;
     font-size: 18px;
     font-family: 'Marcellus';
     font-weight: 600;
@@ -164,6 +167,7 @@ div.cnt02_img{
     background-size: cover;
     width: 100%;
     padding-bottom: 480px;
+    cursor: no-drop;
 }
 div.cnt02_img2{
     display: none;
@@ -174,11 +178,13 @@ div.cnt02_txt{
     left: 400px;
     width: 600px;
     text-align: right;
+    cursor: no-drop;
 }
 div.cnt02_txt>p{
     font-size: 19px;
     line-height: 40px;
     margin-top: 30px;
+    cursor: no-drop;
 }
 div.cnt02_txt>h4{
     font-size: 24px;
@@ -365,11 +371,10 @@ div.recommend_img{
 div.recom_img{
     width: calc(100% / 6 - 20px);
     height: 90%;
-    cursor: pointer;
+    cursor: no-drop;
     position: relative;
     overflow: hidden;
     border: 3px solid #faece6;
-    transition: all 0.4s ease-in-out;
 }
 div.recom_img>img{
     width: 98%;
@@ -389,6 +394,7 @@ div.recom_img>p{
     background-color: #213b38ce;
     color: white;
     padding-top: 18%;
+    transition: all 0.4s ease-in-out;
 }
 div.recom_img:hover p{
     transform: translateY(-270px);

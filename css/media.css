@@ -1,8 +1,24 @@
+@media screen and (min-width:420px){
+    .text2{
+        margin: 150px 0 0 80px;
+    }
+}
 @media screen and (min-width:540px){
     #main_visual .swiper-container .swiper-wrapper .vis1{
         background-size: 64%;
     } 
-    
+    .thank_txt h2{
+        font-size: 1.5em;
+    }
+    .thank_txt p{
+        font-size: 1.1em;
+    }
+    .sns_icon li{
+        margin: 0 10px -20px 10px;
+    }   
+    #m_footer .foot_menu li{
+        font-size: 14px;
+    }
 }
 @media screen and (min-width:620px){
     #main_visual .swiper-container .swiper-wrapper .vis1{
@@ -266,7 +282,32 @@
         font-size: 0.8em;
     }
 }
+@media screen and (min-width:780px){
+    .thank_img{
+        width: 0%;
+        opacity: 0;
+    }
+    .thank_txt{
+        width: 0%;
+        overflow: hidden;
+        padding: 0;
+        opacity: 0;
+    }
+}
 @media screen and (min-width:1024px){
+    .info_menu li a{
+        cursor: no-drop;
+    }
+    .menulist a{
+        cursor: no-drop;
+    }
+    .list01 a{
+        cursor: pointer;
+    }
+    .list01 ul li:nth-of-type(n+2) a{
+        cursor: no-drop;
+
+    }
     #main_visual .swiper-container .swiper-wrapper .vis1{
         background-size: 40%;
         background-position: 10% center;
@@ -348,6 +389,10 @@
         font-size: 1.3em;
         font-weight: 600;
     }
+    #pc_footer .foot_menu li{
+        font-size: 20px;
+    }
+    
     .add{
         font-size: 0.9em;
         margin-top: 10px;
@@ -396,7 +441,7 @@
     }
 }
 @media screen and (min-width:1400px){
-    .info_menu{
+    .info_menu li a{
         font-size: 1.2em;
     }
     .submenu{

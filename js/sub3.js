@@ -7,32 +7,34 @@ $(function(){
         // 태블릿에 대한 액션
     }else{
         //모바일
+
+
+        // 무한슬라이드
         var i = 0;
+        var lb= $('.list');
+
+        lb.find('li:last').prependTo(lb);
+        lb.css('margin-left','-50%');
+
         $('.list_box').swipeleft(function(){
-            i++;
-            if(i >= 2){
-                i =2;
-            }
             $(this).find('ul').animate({
-                marginLeft :i * -50+'%'},500);
+                marginLeft :  -100+'%'},500,function(){
+                lb.find('li:first').appendTo(lb);
+                lb.css('margin-left','-50%');
+            });
         });
         $('.list_box').swiperight(function(){
-            i--;
-            if(i <= 0){
-                i=0;
-            }
             $(this).find('ul').animate({
-                marginLeft :i * -50+'%'},500);
-            
+                marginLeft : 0+'%'},500,function(){
+                lb.find('li:last').prependTo(lb);
+                lb.css('margin-left','-50%');
+            });
         })
+
     }
 
 
-
-
-
-
-
+    // 탑버튼
     $("div.top_btn>img").click(function(){
         $("html, body").animate({
             scrollTop:0

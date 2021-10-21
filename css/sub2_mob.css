@@ -35,3 +35,8 @@ section.product{
 .pro_list li p{
     font-size: 3vw;
 }
+.page_num li{
+    font-size: 15px;
+    margin: 0 10px;
+    margin-bottom: 40px;
+}
