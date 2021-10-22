@@ -5,6 +5,15 @@ a{
 body{
     font-family: 'Nanum Gothic', sans-serif;
 }
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+    background-color: #fff;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+    text-shadow: 0 0 0 treansparent;
+}
+
 div.bg_img{
     background-image: url(../images/main_visu.jpg);
     background-position: left;

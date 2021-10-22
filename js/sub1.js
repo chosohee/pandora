@@ -60,29 +60,66 @@ $(function(){
                 
         });
 
+        var i = 0;
+
+        $('.thumbnail_left').click(function(){
+            i--;
+            if(i <= 0 ){
+                i=0;
+            }
+
+            $('.cnt01_img').stop().animate({
+                marginLeft: i*-100+'%'
+            },500);
+
+            pg.removeClass('sel');
+            pg.eq(i).addClass('sel');
+
+        });
+
+
+        $('.thumbnail_right').click(function(){
+            i++;
+            if(i >= 2 ){
+                i=2;
+            }
+
+            $('.cnt01_img').stop().animate({
+                marginLeft: i*-100+'%'
+            },500);
+
+            pg.removeClass('sel');
+            pg.eq(i).addClass('sel');
+
+
+        });
+
+
+
+
 
 
         // 하단 버튼 슬라이드
         var reImg = $('.recommend_cnt .recommend_img');
 
         reImg.find('.recom_img:last').prependTo(reImg);
-        reImg.css('margin-left','0%');
+        reImg.css('margin-left','-50%');
 
         $('.recommend_cnt .left').click(function(){
             reImg.stop().animate({
                 marginLeft:0
             },500,function(){
             reImg.find('.recom_img:last').prependTo(reImg);
-            reImg.css('margin-left','0%');
+            reImg.css('margin-left','-50%');
             });
         });
 
         $('.recommend_cnt .right').click(function(){
             reImg.stop().animate({
-                marginLeft: -50 + '%'
+                marginLeft: -100 + '%'
             },500,function(){
             reImg.find('.recom_img:first').appendTo(reImg);
-            reImg.css('margin-left','0%');
+            reImg.css('margin-left','-50%');
             });
         });
 

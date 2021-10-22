@@ -1,7 +1,5 @@
 $(function(){
 
-    // $('header').load('../inc/header.html');
-    // $('footer').load('../inc/footer.html');
 
     // 제이쿼리 모바일 방지용 
     $('a').removeClass('ui-link');
@@ -21,7 +19,6 @@ $(function(){
 
     $('div').removeClass('ui-select');
 
-    
     
     
     
@@ -61,14 +58,6 @@ $(function(){
             }
         });
     }
-
-
-
-
-
-
-
-
 
 
         

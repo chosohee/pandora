@@ -298,15 +298,8 @@
     .info_menu li a{
         cursor: no-drop;
     }
-    .menulist a{
+    .submenu a{
         cursor: no-drop;
-    }
-    .list01 a{
-        cursor: pointer;
-    }
-    .list01 ul li:nth-of-type(n+2) a{
-        cursor: no-drop;
-
     }
     #main_visual .swiper-container .swiper-wrapper .vis1{
         background-size: 40%;

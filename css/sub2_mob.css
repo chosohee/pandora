@@ -17,7 +17,7 @@ div.cnt{
     margin: 0 auto;
     width: calc(100% / 4 * 3.8);
 }
-div.sub_menu{
+div.cnt_sub{
     display: none;
 }
 div.cnt01 .cnt_menu li{
