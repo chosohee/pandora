@@ -21,44 +21,6 @@ $(function(){
 
     
     
-    
-    // sub3 폼태그 박스
-    var wd = $(window).width();
-    var flag = false;
-    
-    if(wd <= 1024){
-        
-        $('.select').click(function(){
-            
-            if(!flag){
-                $(this).find('.optionBox').css({
-                    height: 'calc(5vw * 4)'
-                });
-                flag = true;
-            }else{
-                $(this).find('.optionBox').css({
-                    height: 'calc(5vw)'
-                });
-                flag = false;
-            }
-        });
-    }else{        
-        $('.select').click(function(){
-    
-            if(!flag){
-                $(this).find('.optionBox').css({
-                    height: 'calc(2.2vw * 4)'
-                });
-                flag = true;
-            }else{
-                $(this).find('.optionBox').css({
-                    height: 'calc(2.2vw)'
-                });
-                flag = false;
-            }
-        });
-    }
-
 
         
     $(".m_menu").click(function(){
